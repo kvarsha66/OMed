@@ -1,0 +1,570 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr{
+    width: 60px;
+    height: 3px;
+    background-color: cyan;
+    border: none;
+    margin:20px auto ;
+}
+h1{
+    text-align: center;
+}
+
+.topdiv{
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    color: aliceblue;
+    height: 40px;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 10px;
+}
+.topindiv{
+    display: flex;
+    flex-direction: row;
+}
+.topicon{
+    padding-right: 15px;
+    font-size: 20px;    
+}
+
+/* navigation starts */
+nav
+{
+    background-color: white;
+    padding: 7px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    justify-content: center;
+    padding-top: 17px;
+    height: 100px;
+}
+nav ul a
+{
+    color:gray;
+    text-decoration: none;
+    margin-left: 23px;
+    font-weight: 500;
+    transition:color .5s ;
+    font-size: 15PX;
+}
+nav ul a:hover
+{
+    color: rgb(3, 220, 228);
+}
+nav ul li
+{
+    display: inline;
+}
+nav ul
+{
+    display: inline;
+    margin-left: 20px;
+}
+nav button
+{
+    background-color: rgb(3, 220, 228);
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    padding: 10px;
+    color: white;
+}
+nav a img{
+    height: 40px;
+    width: 150px;
+    margin-left: 53px;
+    margin-top: 20px;
+}
+nav a h1{
+    display: inline;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 13px;
+}
+nav ul li a select
+{
+    border-color: transparent;
+}
+/* navigation end */
+
+/* banner starts */
+.banner
+{
+    height: 500px;
+    background-image:url("https://cdn.pixabay.com/photo/2016/11/08/05/29/surgery-1807541__480.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content
+{
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.89) ;
+    justify-content: space-around;
+    width: 1200px;
+    height: 350px;
+}
+.banner .heading-1
+{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+}
+.banner .button1
+{
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:rgb(3, 220, 228); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+     background-color: rgba(211, 211, 211, 0.164);
+}
+.block .b1 h1
+{
+    height: 70px;
+    width: 200px;
+    font-size: 18px;
+}
+.block .b1{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 50px;
+    border-radius: 10px;
+    transition-duration: 1s;
+    transition-property: background-color;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.055);
+}
+.block .b1:hover{  
+    background-color:rgb(3, 220, 228);
+    color: white;
+}
+.block .b1 h1,.block .b1 p{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.block i{
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 40px;
+    color: aqua;
+    margin-top: 10px;
+}
+
+.b2{
+    background-color:rgb(3, 220, 228); 
+    color: white;   
+}
+.b2 .b2div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+.b2 .b2div h1,.b2 .b2div p{
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.b2 .b2div button{
+    height: 50px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+.b2 .b2div button:hover{
+    background-color: white;
+    color: rgb(3, 220, 228);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+.about .about-h {
+    text-align: center;
+    align-items: center;
+}
+.about .about-h h1,.about .about-h p{
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.about .about-b{
+    display: flex;
+    flex-direction: row;
+}
+.about .about-b .about-img img{
+    height: 400px;
+    width: 500px;
+    margin: 60px;
+    margin-top: 20px;
+}
+.about .about-b .about-content{
+    font-size: 16px;
+    margin: 20px;
+}
+.about .about-b .about-content b{
+    font-size: 25px;
+}
+
+.obj{
+
+    background-color: rgba(211, 211, 211, 0.247);
+    display:flex;
+    flex-direction: row;
+    color:rgba(0, 0, 0, 0.603);
+}
+
+.obj .obj1 {
+    display: flex; 
+    flex-direction: column;
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    padding-left: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.055);
+
+}
+.obj .obj1 .obj2 {
+    display: flex;
+    flex-direction: row;
+    
+}
+.obj i{
+    font-size: 30px;
+    margin-right: 40px;
+    color: aqua;
+    margin-top: 10px;
+
+}
+.obj p{
+    margin: 10px;
+}
+
+.appoint{
+    background-color: rgba(135, 207, 235, 0.164);
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.appoint  input, .appoint select{
+
+    margin: 20px ;
+    height: 40px;
+    width: 360px;
+}
+.appoint textarea{
+    margin: 20px;
+
+}
+.appoint p {
+    margin: 20px;
+    text-align: center;
+
+}
+.appoint button{
+    background-color: #03C4EB;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 550px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+
+}
+/* make a appointment ends */
+
+/* department starts */
+.department p{
+    margin-left: 70px;
+    margin-right: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.dept{
+    display: flex;
+    flex-direction: row;
+    
+}
+.dept1{
+    width: 1700px;
+}
+.dept2{
+    margin: 30px;
+
+}
+.dept2 p{
+    margin-bottom: 5px;
+
+}
+.dept2:hover .dept2 h3{
+    color: aqua;
+}
+
+.hep img{
+    margin-left: 50px;
+    height: 300px;
+    width: 300px;
+}
+
+.hep1 {
+    display: flex;
+    flex-direction: row;
+}
+.hep p{
+    margin-bottom: 30px;
+
+}
+.hep1 p {
+    margin-left: 50px;
+    margin-right: 80px;
+
+}
+/* deparment ends */
+.faq {
+    background-color: rgba(135, 207, 235, 0.164);
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Doctors{
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.doc{
+    display: flex;
+    flex-direction: row;
+}
+.doc img{
+    height: 270px;
+    width: 270px;
+    margin: 20px;
+}
+.doc h3,.doc p{
+    margin: 20px;
+}
+
+.img{
+    margin-left: 30px;
+    background-color: rgba(211, 211, 211, 0.185);
+    
+}
+
+.space{
+    height: 100px;
+}
+.FAQ1{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: 400;
+    
+}
+.FAQ1 details{
+    margin: 20px;
+}
+.FAQ1 hr{
+    width: 90%;
+    height: 1px;
+    background-color: rgba(211, 211, 211, 0.493);
+}
+
+
+/* contact starts */
+.contact{
+    margin-top: 40px;
+}
+.contact p{
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    font-size: 17px;
+}
+iframe{
+    height: 300px;
+    width:100%;
+    margin-top: 50px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;    
+}
+.details .details1{
+    display: flex;
+    flex-direction: column;
+    width: 750px;    
+}
+.details22{   
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+.details3
+{
+    margin: 30px;
+}
+
+.input{
+    margin: 10px;    
+}
+.input input{
+    height: 50px;
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    border: rgba(0, 0, 0, 0.205) 1px solid;    
+}
+.input .inputtop input{
+    width: 210px;
+}
+.input textarea{
+    margin: 10px;
+    padding: 10px;
+    border: rgba(0, 0, 0, 0.205) 1px solid;
+
+}
+.input button{
+    height: 50px;
+    width: 200px;
+    background-color: aqua;
+    color: white;
+    margin-left: 350px;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+/* contact starts */
+/* bottom starts */
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(211, 211, 211, 0.219);
+    color: rgba(0, 0, 0, 0.596);
+    padding-top: 50px;    
+}
+.bottom .bmedicio{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.bottom .bicon{
+    display: flex;
+    flex-direction: row;
+}
+.bottom .bicon .biconin{
+    background-color: aqua;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 7px;
+    margin: 5px;
+}
+.bottom .bicon i{
+    font-size: 20px;
+    padding: 9px;
+}
+.buseful,.bservice{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.buseful a,.bservice a{
+    color: rgba(0, 0, 0, 0.596);
+    padding-top: 17px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+.buseful i,.bservice i{
+    color: aqua;
+    margin-right: 7px;
+}
+.buseful a:hover,.bservice a:hover{
+    color: aqua;
+}
+.bnews p{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+.bnews input{
+    height: 40px;
+    width: 260px;
+    margin-top: -5px;
+    border: rgba(0, 0, 0, 0.267) solid 1px;
+}
+.bnews button{
+    height: 40px;
+    width: 140px;
+    margin-left: -5px;
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;  
+}
+/* bottom ends */
+.copyright{
+    height: 70px;
+    background-color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
